@@ -1,0 +1,340 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+/* background image */
+.main {
+    background-image: url(assets/images/bg-img.jpg);
+    height: 110vh;
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1829px, 125vw);
+
+}
+
+.main .box {
+    height: 110vh;
+    width: 100%;
+    opacity: 0.69;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    z-index: 0;
+}
+
+/* nav bar */
+.navbar {
+    margin: 0px 112px;
+    padding: 24px 48px;
+    height: 92px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 10;
+    /* max-width: 1472px; */
+}
+
+#netflix-logo-top {
+    height: 40px;
+    width: 148px;
+}
+
+.nav-right {
+    display: flex;
+    justify-content: space-between;
+    justify-content: end;
+    gap: 24px;
+    align-items: center;
+}
+
+.lang {
+    height: 32px;
+    width: 126px;
+    padding: 6px 36px;
+    background-color: rgba(39, 38, 38, 0.6);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.signin-button {
+    width: 75px;
+    height: 32px;
+    text-align: center;
+    padding: 7px;
+    background-color: #e50914;
+    /* border: 1px solid #e50914; */
+    color: white;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+.signin-button:hover {
+    background-color: #ce0c16;
+}
+
+/* Hero section */
+
+.hero {
+    height: 84%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+    position: relative;
+    padding: 30px;
+    font-family: "Roboto", sans-serif;
+}
+
+.hero> :nth-child(1) {
+    font-weight: 900;
+    font-size: 48px;
+    text-align: center;
+}
+
+.hero>:nth-child(2) {
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+}
+
+.hero>:nth-child(3) {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+
+#email-and-getstart-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+}
+
+.getstarted{
+    width: 209px;
+    height: 56px;
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    text-align: center;
+}
+.getstarted :first-child{
+    position: relative;
+    top: 5px;
+}
+input{
+    height: 56px;
+    width: 368px;
+    background-color: rgba(24, 24, 24, 0.6);
+    border: 1px solid rgba(202, 200, 200, 0.5);
+    border-radius: 4px;
+    padding: 10px;
+    color: white;
+    font-size: 16px;
+}
+
+.saperaton{
+    background-color: rgb(49, 48, 48);
+    height: 8px;
+    /* width: 100vw; */
+    opacity: 0.69;
+}
+
+/* Second section */
+
+
+.second-section{
+    height: 529px;
+    /* width: 100vw; */
+    padding: 72px;
+    color: #ffffff;
+    /* border: 2px solid rgb(255, 0, 179); */
+}
+
+.total-content{
+    display: flex;
+    /* border: 2px solid rgb(0, 255, 21); */
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.left-texts{
+    width: 512px;
+    height: 192px;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+}
+.left-texts :nth-child(1){
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-size: 48px;
+}
+.left-texts :nth-child(2){
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    line-height: 30px;
+}
+.right-img{
+    height: 385px;
+    width: 508px;
+    /* border: 2px solid rgb(68, 0, 255); */
+    padding-left: 6px;
+    position: relative;
+}
+
+.right-img> img{
+    height: 365px;
+    position: absolute;
+    z-index: 1;
+}
+.right-img> video{
+    position: absolute;
+    top: 75px;
+    left: 70px;
+    height: 200px;
+}
+
+/* Third Section */
+
+.right-text{
+    font-family: "Roboto", sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid rgb(0, 38, 255); */
+    max-width: 558px;
+    gap: 16px;
+}
+.right-text :nth-child(1){
+    font-weight: 900;
+    font-size: 48px;
+    overflow-wrap: break-word;
+}
+.right-text :nth-child(2){
+    font-size: 24px;
+    line-height: 30px;
+    overflow-wrap: break-word;
+    font-weight: 400;
+}
+
+.left-img-2ndsec{
+    position: relative;
+    /* border: 2px solid rgb(189, 72, 173); */
+}
+
+.left-img-2ndsec img{
+    height: 380px;
+    /* border: 2px solid rgb(189, 72, 173); */
+    
+}
+
+.saif video{
+    top: 28px;
+    left: 94px;
+    height: 175px;
+}
+
+/* Fiveth Section */
+
+.fiveth-text{
+    max-width: 498px;
+}
+
+/* FAQ Section */
+
+.faq h1{
+    width: 100%;
+    margin-top: 55px;
+    margin-bottom: 35px;
+    color: white;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.faqbox{
+    transition: all 1s ease-out;
+    display: flex;
+    margin: auto;
+    width: 1028px;
+    height: 84px;
+    padding: 27px 24px 27px 24px;
+    background-color: rgb(45 45 45);
+    color: white;
+    font-size: 24px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 9px auto;
+    cursor: pointer;
+}
+.faqbox :hover{
+    background-color: rgb(65 65 65);
+}
+
+.last-btns :nth-child(1){
+    font-size: 19px;
+    font-weight: 400;
+}
+.last-btns{
+    padding: 90px;
+}
+
+footer{
+    color: white;
+    margin: 72px 112px 72px 112px;
+    padding: 0 48px 0 48px;
+}
+
+.footer-links{
+    
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    
+}
+footer> :nth-child(1){
+    padding: 20px 0 20px 0;
+    opacity: 70%;
+    font-size: 16px;
+}
+.footer-links div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+footer a{
+    color: white;
+    font-size: 14px;
+    opacity: 70%;
+}
+
+footer> :nth-child(3){
+    margin: 20px 0 20px 0;
+}
+
+footer> :nth-child(4){
+    font-size: 14px;
+    opacity: 70%;
+}
